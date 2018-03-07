@@ -1,0 +1,17 @@
+ <Environment name="spagobi_resource_path" type="java.lang.String" value="${catalina.base}/resources"/>	
+ <Environment name="spagobi_sso_class" type="java.lang.String" value="it.eng.spagobi.services.common.FakeSsoService"/>
+    <Environment name="spagobi_service_url" type="java.lang.String" value="http://localhost:8080/SpagoBI"/>   
+    <Environment name="spagobi_host_url" type="java.lang.String" value="http://localhost:8080"/>
+
+<Resource name="jdbc/spagobi" auth="Container"
+          type="javax.sql.DataSource" driverClassName="org.hsqldb.jdbcDriver"
+          url="jdbc:hsqldb:file:${catalina.base}/database/spagobi"
+          username="sa" password="" maxActive="20" maxIdle="10"
+          maxWait="-1"/>
+
+
+
+hsqldb:file:${catalina.base}/database/spagobi"
+
+
+url="jdbc:mysql://localhost:3306/spagometadb"
